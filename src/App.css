@@ -45,6 +45,15 @@
   margin-right: 10px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: wheat;
+}
+
 .container > h1 {
   position: sticky;
   top: -10px;
@@ -57,20 +66,11 @@
   height: 70vh;
   background-color: #2f2f2f;
   color: lightblue;
-  font-family: "Source Code Pro", mono space;
+  font-family: "Source Code Pro", monospace;
 }
 
 #preview {
   font-family: "Josefin Sans", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: wheat;
 }
 
 img {

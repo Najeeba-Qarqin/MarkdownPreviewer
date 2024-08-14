@@ -1,7 +1,7 @@
-import { useState } from "react";
-import Markdown from "react-markdown";
-import remarkBreaks from "remark-breaks";
-import remarkGfm from "remark-gfm";
+import { useState } from 'react';
+import Markdown from 'react-markdown';
+import remarkBreaks from 'remark-breaks';
+import remarkGfm from 'remark-gfm';
 
 const defaultMarkdown = `
 ## 1. Title Headings
@@ -149,7 +149,7 @@ function MarkdownPerivewer() {
         <div className="boxes-container">
           <div className="container" id="container">
             <h1>Editor</h1>
-            <textarea className="box" name="editor" id="editor" cols='30' rows='3' value={markdownText} onChange={(e) => setMarkdownText(e.target.value)}></textarea>
+            <textarea className="box" name="editor" id="editor" value={markdownText} onChange={(e) => setMarkdownText(e.target.value)}/>
           </div>
           <div className="container">
             <h1>Preview</h1>
@@ -164,7 +164,7 @@ function MarkdownPerivewer() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default MarkdownPerivewer;
