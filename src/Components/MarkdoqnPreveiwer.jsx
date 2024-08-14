@@ -149,7 +149,7 @@ function MarkdownPerivewer() {
         <div className="boxes-container">
           <div className="container" id="container">
             <h1>Editor</h1>
-            <textarea className="box" name="editor" id="editor" value={markdownText} onChange={(e) => setMarkdownText(e.target.value)}/>
+            <textarea className="box" name="editor" id="editor" value={markdownText} onChange={(e) => setMarkdownText(e.target.value)} />
           </div>
           <div className="container">
             <h1>Preview</h1>
