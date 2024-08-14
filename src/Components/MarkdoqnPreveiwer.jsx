@@ -94,9 +94,9 @@ This is how unordered lists will look like:
 
 ## 7. Links
 
-[This is what linked text looks like](http://dev.nodeca.com)
+[This is what linked text looks like](http://github.com)
 
-[This is a link with a title](http://nodeca.github.io/pica/demo/ "title text!")
+[This is a link with a title](http://github.com "title text!")
 
 ## 8. Code
 
@@ -145,21 +145,21 @@ function MarkdownPerivewer() {
   return (
     <>
       <div>
-        <h1>Markdown Preveiwer</h1>
+        <h1 id="title">Markdown Preveiwer</h1>
         <div className="boxes-container">
-          <div className="container">
-          <h1>Editor</h1>
-          <textarea className="box" name="editor" id="editor" cols='30' rows='3' value={markdownText} onChange={(e) => setMarkdownText(e.target.value)}></textarea>
+          <div className="container" id="container">
+            <h1>Editor</h1>
+            <textarea className="box" name="editor" id="editor" cols='30' rows='3' value={markdownText} onChange={(e) => setMarkdownText(e.target.value)}></textarea>
           </div>
           <div className="container">
-          <h1>Preview</h1>
-          <div id="preview" className="box">
-            <Markdown
-              remarkPlugins={[remarkGfm, remarkBreaks]}
-            >
-              {markdownText}
-            </Markdown>
-          </div>
+            <h1>Preview</h1>
+            <div id="preview" className="box">
+              <Markdown
+                remarkPlugins={[remarkGfm, remarkBreaks]}
+              >
+                {markdownText}
+              </Markdown>
+            </div>
           </div>
         </div>
       </div>
