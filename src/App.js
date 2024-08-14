@@ -1,8 +1,10 @@
 import React from 'react';
+import MarkdownPerivewer from './Components/MarkdoqnPreveiwer';
 
 function App() {
   return (
     <div className="App">
+      <MarkdownPerivewer />
     </div>
   );
 }
