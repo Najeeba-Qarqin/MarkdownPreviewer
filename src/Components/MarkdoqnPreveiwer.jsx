@@ -4,7 +4,6 @@ import remarkBreaks from "remark-breaks";
 import remarkGfm from "remark-gfm";
 
 const defaultMarkdown = `
-
 ## 1. Title Headings
 
 This is what headings will look like:
@@ -148,8 +147,10 @@ function MarkdownPerivewer() {
       <div>
         <h1>Markdown Preveiwer</h1>
         <div className="boxes-container">
-          <textarea name="editor" id="editor" cols='30' rows='3' value={markdownText} onChange={(e) => setMarkdownText(e.target.value)}></textarea>
-          <div id="preview">
+          <h1>Editor</h1>
+          <textarea className="box" name="editor" id="editor" cols='30' rows='3' value={markdownText} onChange={(e) => setMarkdownText(e.target.value)}></textarea>
+          <h1>Preview</h1>
+          <div id="preview" className="box">
             <Markdown
               remarkPlugins={[remarkGfm, remarkBreaks]}
             >
