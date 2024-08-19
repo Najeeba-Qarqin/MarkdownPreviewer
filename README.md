@@ -39,8 +39,6 @@
 
 ## Usage 🎯
 
-Explain how to use your project. Provide examples and instructions on how to run it, any command-line options, or any other relevant information.
-
 How to clone it:
 
 First, clone the repository to your local machine using Git. Open your terminal and run:
