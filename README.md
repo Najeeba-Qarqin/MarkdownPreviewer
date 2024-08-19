@@ -24,7 +24,7 @@
 ## Demo 📸
 
 ![Demo](/src/images/Demo.png)
-- the live link : [Demo](https://profound-calfoutis-1fcdca.netlify.app/)
+- the live link : [Demo](https://wondrous-blini-c571da.netlify.app/)
 
 
 ## Technologies and Tools Used 🛠️
