@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Gidugu&family=Puppies+Play&family=Rubik+Microbe&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Gidugu&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Puppies+Play&family=Rubik+Microbe&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  background-color: #2f2f2f;
+}
+
+#title {
+  border: solid;
+}
+
+.boxes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 20px;
+  margin-top: 40px;
+  width: 90%;
+}
+
+#container {
+  overflow: hidden;
+}
+
+.container {
+  width: 350px;
+  height: 80vh;
+  border: 5px groove wheat;
+  font-size: 15px;
+  background-color: #2f2f2f;
+  resize: none;
+  color: white;
+  padding: 10px;
+  overflow: auto;
+  overflow-anchor: auto;
+  margin: 10px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: wheat;
+}
+
+.container > h1 {
+  position: sticky;
+  top: -10px;
+  background-color: #2f2f2f;
+  border-bottom: solid;
+}
+
+#editor {
+  width: 100%;
+  height: 70vh;
+  background-color: #2f2f2f;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
+
+#preview {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+img {
+  width: 59%;
+  border-radius: 50%;
+}
+
+a {
+  color: wheat;
+}
+
+a:hover {
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  :root {
+    overflow: hidden;
+  }
+
+  #title {
+    float: left;
+    rotate: 90deg;
+    margin: 250px -150px 20px;
+    padding: 10px 50px;
+  }
+
+  .boxes-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box {
+    font-size: 20px;
+  }
+
+  .container {
+    margin: 10px;
+    padding: 10px;
+    width: 600px;
+  }
+}
